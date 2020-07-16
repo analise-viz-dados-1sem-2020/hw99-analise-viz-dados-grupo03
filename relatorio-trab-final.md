@@ -125,29 +125,20 @@ período entre 1990 e 2019. Possui, ainda, mais de 3 milhões de células
 
 Isso posto, o foco do grupo neste trabalho é analisar, dentre os mais de
 387 indicadores disponíveis para os Objetivos de Desenvolvimento
-Sustentável, X indicadores em **três eixos**: **educação, economia e
-sustentabilidade**.
+Sustentável, 22 indicadores em **três eixos**: **educação, economia e
+sustentabilidade**, em um comparativo Brasil, América Latina e Mundo.
 
-  - Educação
-      - A
-  - Economia
-      - A
-  - Sustentabilidade
-      - A
+  - **Educação (ODS 4)**: o Brasil, comparado com LatAm e Mundo,
+    desenvolveu sua educação nos últimos 30 anos? Se sim, sob quais
+    aspectos?
 
-<!-- end list -->
+  - **Economia (ODSs 1, 2, 8, 9 e 10)**: Qual a situação econômica do
+    Brasil, comparado com LatAm e Mundo, na perspectiva do crescimento e
+    desigualdade?
 
-``` r
-#summary(df)
-```
+  - **Sustentabilidade (ODSs 13 e 15)**: O Brasil, comparado com LatAm e
+    Mundo, é sustentável e preserva seus recursos?
 
 ## Análise Exploratória
 
-Análise dos dados
-
-Note that the `echo = FALSE` parameter was added to the code chunk to
-prevent printing of the R code that generated the plot.
-
 ## Considerações finais
-
-Inserir conclusão e limitações que tivemos
