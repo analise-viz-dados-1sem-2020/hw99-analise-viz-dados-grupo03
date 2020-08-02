@@ -9,6 +9,7 @@ output: github_document
 library(readr)
 library(ggplot2)
 library(dplyr)
+library(tidyverse)
 
 df <- read.csv("data/SDGData.csv")
 
@@ -33,23 +34,55 @@ summary(df)
 
 ### Perguntas Exploratórias
 
-Isso posto, o foco do grupo neste trabalho é analisar, dentre os mais de 387 indicadores disponíveis para os Objetivos de Desenvolvimento Sustentável, 22 indicadores em **três eixos**: __educação, economia e sustentabilidade__, em um comparativo Brasil, América Latina e Mundo.
+Isso posto, o foco do grupo neste trabalho é analisar, dentre os mais de 387 indicadores disponíveis para os Objetivos de Desenvolvimento Sustentável, 13 indicadores **no eixo** __educação__, em um comparativo Brasil, América Latina e Mundo.
 
 - **Educação (ODS 4)**: o Brasil, comparado com LatAm e Mundo, desenvolveu sua educação nos últimos 30 anos? Se sim, sob quais aspectos?
 
-- **Economia (ODSs 1, 2, 8, 9 e 10)**: Qual a situação econômica do Brasil, comparado com LatAm e Mundo, na perspectiva do crescimento e desigualdade? 
-  
-- **Sustentabilidade (ODSs 13 e 15)**: O Brasil, comparado com LatAm e Mundo, é sustentável e preserva seus recursos?
+1) __Children out of school (% of primary school age)__
+2) __Literacy rate, adult total (% of people ages 15 and above)__
+3) __Literacy rate, youth (ages 15-24), gender parity index (GPI)__
+4) __Primary completion rate, female (% of relevant age group)__
+5) __Primary completion rate, male (% of relevant age group)__
+6) __Primary completion rate, total (% of relevant age group)__
+7) __Primary education, duration (years)__
+8) __Children in employment, total (% of children ages 7-14)__
+9) __Educational attainment, at least Bachelor's or equivalent, population 25+, total (%) (cumulative)__
+10) __Educational attainment, at least completed lower secondary, population 25+, total (%) (cumulative)__
+11) __Educational attainment, at least completed post-secondary, population 25+, total (%) (cumulative)__
+12) __Educational attainment, at least Master's or equivalent, population 25+, total (%) (cumulative)__
+13) __Educational attainment, Doctoral or equivalent, population 25+, total (%) (cumulative)__
+
 
 ```{r, echo=FALSE}
 #summary(df)
+
+#PRA ANALISAR TEM QUE FAZER O PIVOT LONGER -> TRANSFORMAR AS COLUNAS DE ANO EM LINHAS PARA AS VARIÁVEIS
+#  pivot_longer(-Country.Name, -Country.Code, -Indicator.Name, -Indicator.Code, names_to = "Ano", values_to = "Valores")
 ```
 
 ## Análise Exploratória
 
-
-
 ```{r, echo=FALSE}
+
+#código para cada análise
+
+df %>%
+  groupby(Indicator.Name) %>%
+  filter(Indicator.Name == "NOME DO INDICADOR - SÓ COPIAR O QUE EU COLOQUEI") %>%
+  filter(Country.Code = "BRA" + "LCN" + "WLD") %>%
+  #ggplot (x = Ano, y = Valores) - Brasil, América Latina e Mundo 5>%
+  #facet_wrap (~Country.Name)
+
+#EXEMPLO:  
+
+# Indicador 1: crianças fora da escola (%)
+  
+df %>%
+  group_by(Indicator.Name) %>%
+  filter(Indicator.Name == "Children out of school (% of primary school age)") %>%
+  filter(Country.Code = "BRA" + "LCN" + "WLD") %>%
+  #ggplot (x = Ano, y = Valores) - Brasil, América Latina e Mundo 5>%
+  #facet_wrap (~Country.Name)
 
 ```
 
