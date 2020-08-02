@@ -125,20 +125,40 @@ período entre 1990 e 2019. Possui, ainda, mais de 3 milhões de células
 
 Isso posto, o foco do grupo neste trabalho é analisar, dentre os mais de
 387 indicadores disponíveis para os Objetivos de Desenvolvimento
-Sustentável, 22 indicadores em **três eixos**: **educação, economia e
-sustentabilidade**, em um comparativo Brasil, América Latina e Mundo.
+Sustentável, 13 indicadores **no eixo** **educação**, em um comparativo
+Brasil, América Latina e Mundo.
 
   - **Educação (ODS 4)**: o Brasil, comparado com LatAm e Mundo,
     desenvolveu sua educação nos últimos 30 anos? Se sim, sob quais
     aspectos?
 
-  - **Economia (ODSs 1, 2, 8, 9 e 10)**: Qual a situação econômica do
-    Brasil, comparado com LatAm e Mundo, na perspectiva do crescimento e
-    desigualdade?
+<!-- end list -->
 
-  - **Sustentabilidade (ODSs 13 e 15)**: O Brasil, comparado com LatAm e
-    Mundo, é sustentável e preserva seus recursos?
+1)  **Children out of school (% of primary school age)**
+2)  **Literacy rate, adult total (% of people ages 15 and above)**
+3)  **Literacy rate, youth (ages 15-24), gender parity index (GPI)**
+4)  **Primary completion rate, female (% of relevant age group)**
+5)  **Primary completion rate, male (% of relevant age group)**
+6)  **Primary completion rate, total (% of relevant age group)**
+7)  **Primary education, duration (years)**
+8)  **Children in employment, total (% of children ages 7-14)**
+9)  **Educational attainment, at least Bachelor’s or equivalent,
+    population 25+, total (%) (cumulative)**
+10) **Educational attainment, at least completed lower secondary,
+    population 25+, total (%) (cumulative)**
+11) **Educational attainment, at least completed post-secondary,
+    population 25+, total (%) (cumulative)**
+12) **Educational attainment, at least Master’s or equivalent,
+    population 25+, total (%) (cumulative)**
+13) **Educational attainment, Doctoral or equivalent, population 25+,
+    total (%) (cumulative)**
 
 ## Análise Exploratória
+
+![](relatorio-trab-final_files/figure-gfm/unnamed-chunk-3-1.png)<!-- -->
+
+ANÁLISE DO GRÁFICO
+
+![](relatorio-trab-final_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
 
 ## Considerações finais

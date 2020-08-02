@@ -66,8 +66,7 @@ df<- df %>%
 
 ## Análise Exploratória
 
-```{r, echo=FALSE}
-
+```{r, echo=FALSE , message= FALSE , warning= FALSE}
 #código para cada análise
 #EXEMPLO:  
 
@@ -83,8 +82,24 @@ df %>%
   geom_smooth(span = 0.3) +
   labs(y = "Porcentagem", title = "Crianças fora da escola (% em idade escolar primária)")
 
+```
+
+ANÁLISE DO GRÁFICO
 
 
+```{r, echo=FALSE, message= FALSE , warning= FALSE}
+
+# Indicador 2: Literacy rate, adult total (% of people ages 15 and above)
+
+df %>%
+  group_by(Indicator.Name) %>%
+  filter(Indicator.Name == "Literacy rate, adult total (% of people ages 15 and above)") %>%
+  filter(Country.Code == "BRA" | Country.Code ==  "LCN" | Country.Code == "WLD") %>%
+  filter(!is.na(Valores)) %>% 
+  ggplot(aes(x = Ano, y = Valores, group= Country.Name,  col = Country.Name, fill=Country.Name))  + 
+  geom_point() + 
+  geom_smooth(span = 0.3) +
+  labs(y = "Porcentagem", title = "Literacy rate, adult total (% of people ages 15 and above)")
 
 ```
 
