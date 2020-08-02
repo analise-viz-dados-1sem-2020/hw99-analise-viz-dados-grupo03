@@ -157,8 +157,28 @@ Brasil, América Latina e Mundo.
 
 ![](relatorio-trab-final_files/figure-gfm/unnamed-chunk-3-1.png)<!-- -->
 
-ANÁLISE DO GRÁFICO
-
 ![](relatorio-trab-final_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
+
+![](relatorio-trab-final_files/figure-gfm/unnamed-chunk-5-1.png)<!-- -->
+
+![](relatorio-trab-final_files/figure-gfm/unnamed-chunk-6-1.png)<!-- -->
+
+![](relatorio-trab-final_files/figure-gfm/unnamed-chunk-7-1.png)<!-- -->
+
+![](relatorio-trab-final_files/figure-gfm/unnamed-chunk-8-1.png)<!-- -->
+
+![](relatorio-trab-final_files/figure-gfm/unnamed-chunk-9-1.png)<!-- -->
+
+![](relatorio-trab-final_files/figure-gfm/unnamed-chunk-10-1.png)<!-- -->
+
+![](relatorio-trab-final_files/figure-gfm/unnamed-chunk-11-1.png)<!-- -->
+
+![](relatorio-trab-final_files/figure-gfm/unnamed-chunk-12-1.png)<!-- -->
+
+![](relatorio-trab-final_files/figure-gfm/unnamed-chunk-13-1.png)<!-- -->
+
+![](relatorio-trab-final_files/figure-gfm/unnamed-chunk-14-1.png)<!-- -->
+
+![](relatorio-trab-final_files/figure-gfm/unnamed-chunk-15-1.png)<!-- -->
 
 ## Considerações finais

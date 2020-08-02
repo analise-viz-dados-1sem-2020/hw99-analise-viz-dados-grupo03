@@ -84,9 +84,6 @@ df %>%
 
 ```
 
-ANÁLISE DO GRÁFICO
-
-
 ```{r, echo=FALSE, message= FALSE , warning= FALSE}
 
 # Indicador 2: Literacy rate, adult total (% of people ages 15 and above)
@@ -102,6 +99,184 @@ df %>%
   labs(y = "Porcentagem", title = "Literacy rate, adult total (% of people ages 15 and above)")
 
 ```
+
+```{r, echo=FALSE, message= FALSE , warning= FALSE}
+
+# Indicador 3: Literacy rate, youth (ages 15-24), gender parity index (GPI)
+
+df %>%
+  group_by(Indicator.Name) %>%
+  filter(Indicator.Name == "Literacy rate, youth (ages 15-24), gender parity index (GPI)") %>%
+  filter(Country.Code == "BRA" | Country.Code ==  "LCN" | Country.Code == "WLD") %>%
+  filter(!is.na(Valores)) %>% 
+  ggplot(aes(x = Ano, y = Valores, group= Country.Name,  col = Country.Name, fill=Country.Name))  + 
+  geom_point() + 
+  geom_smooth(span = 0.3) +
+  labs(y = "Índice", title = "Literacy rate, youth (ages 15-24), gender parity index (GPI)")
+
+```
+
+```{r, echo=FALSE, message= FALSE , warning= FALSE}
+
+# Indicador 4: Primary completion rate, female (% of relevant age group)
+
+df %>%
+  group_by(Indicator.Name) %>%
+  filter(Indicator.Name == "Primary completion rate, female (% of relevant age group)" ) %>%
+  filter(Country.Code == "BRA" | Country.Code ==  "LCN" | Country.Code == "WLD") %>%
+  filter(!is.na(Valores)) %>% 
+  ggplot(aes(x = Ano, y = Valores, group = Country.Name, col = Country.Name, fill=Country.Name))  + 
+  geom_point() + 
+  geom_smooth(span = 0.3) +
+  labs(y = "Porcentagem", title = "Primary completion rate, female (% of relevant age group)")
+
+```
+
+```{r, echo=FALSE, message= FALSE , warning= FALSE}
+
+# Indicador 5: Primary completion rate, male (% of relevant age group)
+
+df %>%
+  group_by(Indicator.Name) %>%
+  filter(Indicator.Name == "Primary completion rate, male (% of relevant age group)" ) %>%
+  filter(Country.Code == "BRA" | Country.Code ==  "LCN" | Country.Code == "WLD") %>%
+  filter(!is.na(Valores)) %>% 
+  ggplot(aes(x = Ano, y = Valores, group = Country.Name, col = Country.Name, fill=Country.Name))  + 
+  geom_point() + 
+  geom_smooth(span = 0.3) +
+  labs(y = "Porcentagem", title = "Primary completion rate, male (% of relevant age group)")
+
+```
+
+
+```{r, echo=FALSE, message= FALSE , warning= FALSE}
+
+# Indicador 6: Primary completion rate, total (% of relevant age group)
+
+df %>%
+  group_by(Indicator.Name) %>%
+  filter(Indicator.Name == "Primary completion rate, total (% of relevant age group)" ) %>%
+  filter(Country.Code == "BRA" | Country.Code ==  "LCN" | Country.Code == "WLD") %>%
+  filter(!is.na(Valores)) %>% 
+  ggplot(aes(x = Ano, y = Valores, group = Country.Name, col = Country.Name, fill=Country.Name))  + 
+  geom_point() + 
+  geom_smooth(span = 0.3) +
+  labs(y = "Porcentagem", title = "Primary completion rate, total (% of relevant age group)")
+
+```
+
+```{r, echo=FALSE, message= FALSE , warning= FALSE}
+
+# Indicador 7: Primary education, duration (years)
+
+df %>%
+  group_by(Indicator.Name) %>%
+  filter(Indicator.Name == "Primary education, duration (years)" ) %>%
+  filter(Country.Code == "BRA" | Country.Code ==  "LCN" | Country.Code == "WLD") %>%
+  filter(!is.na(Valores)) %>% 
+  ggplot(aes(x = Ano, y = Valores, group = Country.Name, col = Country.Name, fill=Country.Name))  + 
+  geom_point() + 
+  labs(y = "Anos", title = "Primary education, duration (years)")
+
+```
+
+```{r, echo=FALSE, message= FALSE , warning= FALSE}
+
+# Indicador 8: Children in employment, total (% of children ages 7-14)
+
+df %>%
+  group_by(Indicator.Name) %>%
+  filter(Indicator.Name == "Children in employment, total (% of children ages 7-14)" ) %>%
+  filter(Country.Code == "BRA" | Country.Code ==  "LCN" | Country.Code == "WLD") %>%
+  filter(!is.na(Valores)) %>% 
+  ggplot(aes(x = Ano, y = Valores, group = Country.Name, col = Country.Name, fill=Country.Name))  + 
+  geom_point() + 
+  geom_smooth(span = 0.3) +
+  labs(y = "Porcentagem", title = "Children in employment, total (% of children ages 7-14)")
+
+```
+
+```{r, echo=FALSE, message= FALSE , warning= FALSE}
+
+# Indicador 9: Educational attainment, at least Bachelor's or equivalent, population 25+, total (%) (cumulative)
+
+df %>%
+  group_by(Indicator.Name) %>%
+  filter(Indicator.Name == "Educational attainment, at least Bachelor's or equivalent, population 25+, total (%) (cumulative)" ) %>%
+  filter(Country.Code == "BRA" | Country.Code ==  "LCN" | Country.Code == "WLD") %>%
+  filter(!is.na(Valores)) %>% 
+  ggplot(aes(x = Ano, y = Valores, group = Country.Name, col = Country.Name, fill=Country.Name))  + 
+  geom_point() + 
+  geom_smooth(span = 0.3) +
+  labs(y = "Porcentagem", title = "Educational attainment, at least Bachelor's or equivalent, population 25+, total (%) (cumulative)")
+
+```
+
+```{r, echo=FALSE, message= FALSE , warning= FALSE}
+
+# Indicador 10: Educational attainment, at least completed lower secondary, population 25+, total (%) (cumulative)
+
+df %>%
+  group_by(Indicator.Name) %>%
+  filter(Indicator.Name == "Educational attainment, at least completed lower secondary, population 25+, total (%) (cumulative)" ) %>%
+  filter(Country.Code == "BRA" | Country.Code ==  "LCN" | Country.Code == "WLD") %>%
+  filter(!is.na(Valores)) %>% 
+  ggplot(aes(x = Ano, y = Valores, group = Country.Name, col = Country.Name, fill=Country.Name))  + 
+  geom_point() + 
+  geom_smooth(span = 0.3) +
+  labs(y = "Porcentagem", title = "Educational attainment, at least completed lower secondary, population 25+, total (%) (cumulative)")
+
+```
+
+```{r, echo=FALSE, message= FALSE , warning= FALSE}
+
+# Indicador 11: Educational attainment, at least completed post-secondary, population 25+, total (%) (cumulative)
+
+df %>%
+  group_by(Indicator.Name) %>%
+  filter(Indicator.Name == "Educational attainment, at least completed post-secondary, population 25+, total (%) (cumulative)" ) %>%
+  filter(Country.Code == "BRA" | Country.Code ==  "LCN" | Country.Code == "WLD") %>%
+  filter(!is.na(Valores)) %>% 
+  ggplot(aes(x = Ano, y = Valores, group = Country.Name, col = Country.Name, fill=Country.Name))  + 
+  geom_point() + 
+  geom_smooth(span = 0.3) +
+  labs(y = "Porcentagem", title = "Educational attainment, at least completed post-secondary, population 25+, total (%) (cumulative)")
+
+```
+
+```{r, echo=FALSE, message= FALSE , warning= FALSE}
+
+# Indicador 12: Educational attainment, at least Master's or equivalent, population 25+, total (%) (cumulative)
+
+df %>%
+  group_by(Indicator.Name) %>%
+  filter(Indicator.Name == "Educational attainment, at least Master's or equivalent, population 25+, total (%) (cumulative)" ) %>%
+  filter(Country.Code == "BRA" | Country.Code ==  "LCN" | Country.Code == "WLD") %>%
+  filter(!is.na(Valores)) %>% 
+  ggplot(aes(x = Ano, y = Valores, group = Country.Name, col = Country.Name, fill=Country.Name))  + 
+  geom_point() + 
+  geom_smooth(span = 0.3) +
+  labs(y = "Porcentagem", title = "Educational attainment, at least Master's or equivalent, population 25+, total (%) (cumulative)")
+
+```
+
+```{r, echo=FALSE, message= FALSE , warning= FALSE}
+
+# Indicador 13: Educational attainment, Doctoral or equivalent, population 25+, total (%) (cumulative)
+
+df %>%
+  group_by(Indicator.Name) %>%
+  filter(Indicator.Name == "Educational attainment, Doctoral or equivalent, population 25+, total (%) (cumulative)" ) %>%
+  filter(Country.Code == "BRA" | Country.Code ==  "LCN" | Country.Code == "WLD") %>%
+  filter(!is.na(Valores)) %>% 
+  ggplot(aes(x = Ano, y = Valores, group = Country.Name, col = Country.Name, fill=Country.Name))  + 
+  geom_point() + 
+  geom_smooth(span = 0.3) +
+  labs(y = "Porcentagem", title = "Educational attainment, Doctoral or equivalent, population 25+, total (%) (cumulative)")
+
+```
+
+
 
 ## Considerações finais
 
