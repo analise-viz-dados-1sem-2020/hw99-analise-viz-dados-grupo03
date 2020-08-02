@@ -57,7 +57,11 @@ Isso posto, o foco do grupo neste trabalho é analisar, dentre os mais de 387 in
 #summary(df)
 
 #PRA ANALISAR TEM QUE FAZER O PIVOT LONGER -> TRANSFORMAR AS COLUNAS DE ANO EM LINHAS PARA AS VARIÁVEIS
-#  pivot_longer(-Country.Name, -Country.Code, -Indicator.Name, -Indicator.Code, names_to = "Ano", values_to = "Valores")
+
+df<- df %>% 
+  pivot_longer(c(-Country.Name, -Country.Code, -Indicator.Name, -Indicator.Code),
+               names_to = "Ano",
+               values_to = "Valores")
 ```
 
 ## Análise Exploratória
@@ -65,24 +69,22 @@ Isso posto, o foco do grupo neste trabalho é analisar, dentre os mais de 387 in
 ```{r, echo=FALSE}
 
 #código para cada análise
-
-df %>%
-  groupby(Indicator.Name) %>%
-  filter(Indicator.Name == "NOME DO INDICADOR - SÓ COPIAR O QUE EU COLOQUEI") %>%
-  filter(Country.Code = "BRA" + "LCN" + "WLD") %>%
-  #ggplot (x = Ano, y = Valores) - Brasil, América Latina e Mundo 5>%
-  #facet_wrap (~Country.Name)
-
 #EXEMPLO:  
 
 # Indicador 1: crianças fora da escola (%)
-  
+
 df %>%
   group_by(Indicator.Name) %>%
   filter(Indicator.Name == "Children out of school (% of primary school age)") %>%
-  filter(Country.Code = "BRA" + "LCN" + "WLD") %>%
-  ggplot (aes(x = Ano, y = Valores) + geom_point()) %>%
-  facet_wrap(~Country.Name)
+  filter(Country.Code == "BRA" | Country.Code ==  "LCN" | Country.Code == "WLD") %>%
+  filter(!is.na(Valores)) %>% 
+  ggplot(aes(x = Ano, y = Valores, group= Country.Name,  col = Country.Name, fill=Country.Name))  + 
+  geom_point() + 
+  geom_smooth(span = 0.3) +
+  labs(y = "Porcentagem", title = "Crianças fora da escola (% em idade escolar primária)")
+
+
+
 
 ```
 
