@@ -81,8 +81,8 @@ df %>%
   group_by(Indicator.Name) %>%
   filter(Indicator.Name == "Children out of school (% of primary school age)") %>%
   filter(Country.Code = "BRA" + "LCN" + "WLD") %>%
-  #ggplot (x = Ano, y = Valores) - Brasil, América Latina e Mundo 5>%
-  #facet_wrap (~Country.Name)
+  ggplot (aes(x = Ano, y = Valores) + geom_point()) %>%
+  facet_wrap(~Country.Name)
 
 ```
 
