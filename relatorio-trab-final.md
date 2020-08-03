@@ -1,7 +1,7 @@
 Trabalho Final - R
 ================
 Grupo 3 - Bruno Volpini, Dimitri Assis e Lucas Magesty
-15/07/2020
+05/08/2020
 
 # OBJETIVOS DO DESENVOLVIMENTO SUSTENTÁVEL: ANÁLISE DOS DADOS DO BANCO MUNDIAL
 
@@ -130,28 +130,28 @@ Brasil, América Latina e Mundo.
 
   - **Educação (ODS 4)**: o Brasil, comparado com LatAm e Mundo,
     desenvolveu sua educação nos últimos 30 anos? Se sim, sob quais
-    aspectos?
+    aspectos? (*nome original dos indicadores, em inglês*)
 
 <!-- end list -->
 
-1)  **Children out of school (% of primary school age)**
-2)  **Literacy rate, adult total (% of people ages 15 and above)**
-3)  **Literacy rate, youth (ages 15-24), gender parity index (GPI)**
-4)  **Primary completion rate, female (% of relevant age group)**
-5)  **Primary completion rate, male (% of relevant age group)**
-6)  **Primary completion rate, total (% of relevant age group)**
-7)  **Primary education, duration (years)**
-8)  **Children in employment, total (% of children ages 7-14)**
-9)  **Educational attainment, at least Bachelor’s or equivalent,
-    population 25+, total (%) (cumulative)**
-10) **Educational attainment, at least completed lower secondary,
-    population 25+, total (%) (cumulative)**
-11) **Educational attainment, at least completed post-secondary,
-    population 25+, total (%) (cumulative)**
-12) **Educational attainment, at least Master’s or equivalent,
-    population 25+, total (%) (cumulative)**
-13) **Educational attainment, Doctoral or equivalent, population 25+,
-    total (%) (cumulative)**
+1)  *Children out of school (% of primary school age)*
+2)  *Literacy rate, adult total (% of people ages 15 and above)*
+3)  *Literacy rate, youth (ages 15-24), gender parity index (GPI)*
+4)  *Primary completion rate, female (% of relevant age group)*
+5)  *Primary completion rate, male (% of relevant age group)*
+6)  *Primary completion rate, total (% of relevant age group)*
+7)  *Primary education, duration (years)*
+8)  *Children in employment, total (% of children ages 7-14)*
+9)  *Educational attainment, at least Bachelor’s or equivalent,
+    population 25+, total (%) (cumulative)*
+10) *Educational attainment, at least completed lower secondary,
+    population 25+, total (%) (cumulative)*
+11) *Educational attainment, at least completed post-secondary,
+    population 25+, total (%) (cumulative)*
+12) *Educational attainment, at least Master’s or equivalent, population
+    25+, total (%) (cumulative)*
+13) *Educational attainment, Doctoral or equivalent, population 25+,
+    total (%) (cumulative)*
 
 ## Análise Exploratória
 
@@ -182,3 +182,37 @@ Brasil, América Latina e Mundo.
 ![](relatorio-trab-final_files/figure-gfm/unnamed-chunk-15-1.png)<!-- -->
 
 ## Considerações finais
+
+Após análise dos 13 indicadores de educação da base mundial de
+indicadores dos Objetivos de Desenvolvimento Sustentável do Banco
+Mundial, o grupo chegou aos seguintes resultados:
+
+1)  O Brasil, desde 1990, alcançou, em média, uma **melhoria** em seus
+    indicadores. A população tem ficado mais tempo na escola, finalizado
+    sua educação básica, fundamental e média, além de ter completado a
+    graduação, o mestrado e o doutorado.
+
+2)  Outro ponto importante: as crianças ficam, e ficam mais tempo na
+    escola - além do trabalho infantil ter caído vertiginosamente nos
+    anos de coleta dos dados.
+
+3)  Em comparação com a América Latina e Mundo ( *Nota: Alguns dos dados
+    não possuem coleta nas três regiões simultaneamente* ), o Brasil
+    possui *mais crianças na escola* - porém, os indicadores de adultos
+    alfabetizados ainda são piores que os da América Latina como um
+    todo, e de duração da educação básica é pior que o mundial.
+
+4)  A análise do grupo foi prejudicada pelo fato de não haver coleta de
+    todos os dados necessários - há alguns que somente o Brasil possui;
+    outros, que somente a América Latina ou mundo. Entretanto, em que
+    pese os desafios enfrentados, nossa conclusão é a de que **o Brasil
+    tem se desenvolvido em sua educação - mas ainda temos um longo
+    caminho a percorrer.**
+
+## Referências
+
+[BASE DE ODS DO BANCO
+MUNDIAL?](https://datacatalog.worldbank.org/dataset/sustainable-development-goals/)
+
+[O QUE É
+ODS?](https://www.un.org/sustainabledevelopment/sustainable-development-goals/)
